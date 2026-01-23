@@ -1,0 +1,7 @@
+"./Src/main.o"
+"./Src/syscalls.o"
+"./Src/sysmem.o"
+"./Src/user_led.o"
+"./Src/user_os_kernal.o"
+"./Src/user_uart.o"
+"./Startup/startup_stm32f407vgtx.o"

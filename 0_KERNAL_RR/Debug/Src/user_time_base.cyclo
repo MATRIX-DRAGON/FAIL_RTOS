@@ -1,0 +1,5 @@
+../Src/user_time_base.c:24:6:tick_incriment	1
+../Src/user_time_base.c:28:10:get_tick	1
+../Src/user_time_base.c:35:6:delay	3
+../Src/user_time_base.c:45:6:time_base_init	1
+../Src/user_time_base.c:67:6:SysTick_Handler	1
