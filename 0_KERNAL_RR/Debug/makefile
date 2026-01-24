@@ -59,8 +59,8 @@ all: main-build
 main-build: 0_KERNAL_RR.elf secondary-outputs
 
 # Tool invocations
-0_KERNAL_RR.elf 0_KERNAL_RR.map: $(OBJS) $(USER_OBJS) C:\Users\ronyp\Desktop\PROJERCS\RPC_RTOS\COD_WS\0_KERNAL_RR\STM32F407VGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "0_KERNAL_RR.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\ronyp\Desktop\PROJERCS\RPC_RTOS\COD_WS\0_KERNAL_RR\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="0_KERNAL_RR.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+0_KERNAL_RR.elf 0_KERNAL_RR.map: $(OBJS) $(USER_OBJS) C:\Users\ronyp\Desktop\GIT_PROJECTS\KAINOS_PROJECTS\FAIL_RTOS\FAIL_RTOS\0_KERNAL_RR\STM32F407VGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "0_KERNAL_RR.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\ronyp\Desktop\GIT_PROJECTS\KAINOS_PROJECTS\FAIL_RTOS\FAIL_RTOS\0_KERNAL_RR\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="0_KERNAL_RR.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

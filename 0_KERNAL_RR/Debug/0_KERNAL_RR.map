@@ -1313,24 +1313,24 @@ LOAD C:/ST/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
  .debug_macro   0x0001a04b      0x108 ./Src/user_os_kernal.o
  .debug_macro   0x0001a153      0x1df ./Src/user_uart.o
 
-.debug_line     0x00000000     0x2a2a
- .debug_line    0x00000000      0x767 ./Src/main.o
- .debug_line    0x00000767      0x8a7 ./Src/syscalls.o
- .debug_line    0x0000100e      0x583 ./Src/sysmem.o
- .debug_line    0x00001591      0x5ab ./Src/user_led.o
- .debug_line    0x00001b3c      0x6c6 ./Src/user_os_kernal.o
- .debug_line    0x00002202      0x7ad ./Src/user_uart.o
- .debug_line    0x000029af       0x7b ./Startup/startup_stm32f407vgtx.o
+.debug_line     0x00000000     0x2aea
+ .debug_line    0x00000000      0x797 ./Src/main.o
+ .debug_line    0x00000797      0x8a7 ./Src/syscalls.o
+ .debug_line    0x0000103e      0x583 ./Src/sysmem.o
+ .debug_line    0x000015c1      0x5db ./Src/user_led.o
+ .debug_line    0x00001b9c      0x6f6 ./Src/user_os_kernal.o
+ .debug_line    0x00002292      0x7dd ./Src/user_uart.o
+ .debug_line    0x00002a6f       0x7b ./Startup/startup_stm32f407vgtx.o
 
-.debug_str      0x00000000    0x8e8d9
- .debug_str     0x00000000    0x8e8d9 ./Src/main.o
-                              0x8c005 (size before relaxing)
- .debug_str     0x0008e8d9     0x99c8 ./Src/syscalls.o
- .debug_str     0x0008e8d9     0x7766 ./Src/sysmem.o
- .debug_str     0x0008e8d9    0x88574 ./Src/user_led.o
- .debug_str     0x0008e8d9    0x88ba2 ./Src/user_os_kernal.o
- .debug_str     0x0008e8d9    0x8c154 ./Src/user_uart.o
- .debug_str     0x0008e8d9       0x81 ./Startup/startup_stm32f407vgtx.o
+.debug_str      0x00000000    0x8e8f1
+ .debug_str     0x00000000    0x8e8f1 ./Src/main.o
+                              0x8c01d (size before relaxing)
+ .debug_str     0x0008e8f1     0x99e0 ./Src/syscalls.o
+ .debug_str     0x0008e8f1     0x777e ./Src/sysmem.o
+ .debug_str     0x0008e8f1    0x8858c ./Src/user_led.o
+ .debug_str     0x0008e8f1    0x88bba ./Src/user_os_kernal.o
+ .debug_str     0x0008e8f1    0x8c16c ./Src/user_uart.o
+ .debug_str     0x0008e8f1       0x99 ./Startup/startup_stm32f407vgtx.o
 
 .comment        0x00000000       0x43
  .comment       0x00000000       0x43 ./Src/main.o
@@ -1375,6 +1375,6 @@ LOAD C:/ST/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
  .debug_frame   0x00000d28       0x2c C:/ST/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-isattyr.o)
 
 .debug_line_str
-                0x00000000       0x65
+                0x00000000       0x7d
  .debug_line_str
-                0x00000000       0x65 ./Startup/startup_stm32f407vgtx.o
+                0x00000000       0x7d ./Startup/startup_stm32f407vgtx.o

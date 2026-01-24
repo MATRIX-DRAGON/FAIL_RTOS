@@ -1,18 +1,18 @@
 Src/user_led.o: ../Src/user_led.c ../Inc/user_led.h \
- C:/Users/ronyp/Desktop/PROJERCS/RPC_RTOS/COD_WS/0_KERNAL_RR/chip_headers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
- C:/Users/ronyp/Desktop/PROJERCS/RPC_RTOS/COD_WS/0_KERNAL_RR/chip_headers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h \
- C:/Users/ronyp/Desktop/PROJERCS/RPC_RTOS/COD_WS/0_KERNAL_RR/chip_headers/CMSIS/Include/core_cm4.h \
- C:/Users/ronyp/Desktop/PROJERCS/RPC_RTOS/COD_WS/0_KERNAL_RR/chip_headers/CMSIS/Include/cmsis_version.h \
- C:/Users/ronyp/Desktop/PROJERCS/RPC_RTOS/COD_WS/0_KERNAL_RR/chip_headers/CMSIS/Include/cmsis_compiler.h \
- C:/Users/ronyp/Desktop/PROJERCS/RPC_RTOS/COD_WS/0_KERNAL_RR/chip_headers/CMSIS/Include/cmsis_gcc.h \
- C:/Users/ronyp/Desktop/PROJERCS/RPC_RTOS/COD_WS/0_KERNAL_RR/chip_headers/CMSIS/Include/mpu_armv7.h \
- C:/Users/ronyp/Desktop/PROJERCS/RPC_RTOS/COD_WS/0_KERNAL_RR/chip_headers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h
+ C:/Users/ronyp/Desktop/GIT_PROJECTS/KAINOS_PROJECTS/FAIL_RTOS/FAIL_RTOS/0_KERNAL_RR/chip_headers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
+ C:/Users/ronyp/Desktop/GIT_PROJECTS/KAINOS_PROJECTS/FAIL_RTOS/FAIL_RTOS/0_KERNAL_RR/chip_headers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h \
+ C:/Users/ronyp/Desktop/GIT_PROJECTS/KAINOS_PROJECTS/FAIL_RTOS/FAIL_RTOS/0_KERNAL_RR/chip_headers/CMSIS/Include/core_cm4.h \
+ C:/Users/ronyp/Desktop/GIT_PROJECTS/KAINOS_PROJECTS/FAIL_RTOS/FAIL_RTOS/0_KERNAL_RR/chip_headers/CMSIS/Include/cmsis_version.h \
+ C:/Users/ronyp/Desktop/GIT_PROJECTS/KAINOS_PROJECTS/FAIL_RTOS/FAIL_RTOS/0_KERNAL_RR/chip_headers/CMSIS/Include/cmsis_compiler.h \
+ C:/Users/ronyp/Desktop/GIT_PROJECTS/KAINOS_PROJECTS/FAIL_RTOS/FAIL_RTOS/0_KERNAL_RR/chip_headers/CMSIS/Include/cmsis_gcc.h \
+ C:/Users/ronyp/Desktop/GIT_PROJECTS/KAINOS_PROJECTS/FAIL_RTOS/FAIL_RTOS/0_KERNAL_RR/chip_headers/CMSIS/Include/mpu_armv7.h \
+ C:/Users/ronyp/Desktop/GIT_PROJECTS/KAINOS_PROJECTS/FAIL_RTOS/FAIL_RTOS/0_KERNAL_RR/chip_headers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h
 ../Inc/user_led.h:
-C:/Users/ronyp/Desktop/PROJERCS/RPC_RTOS/COD_WS/0_KERNAL_RR/chip_headers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:
-C:/Users/ronyp/Desktop/PROJERCS/RPC_RTOS/COD_WS/0_KERNAL_RR/chip_headers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h:
-C:/Users/ronyp/Desktop/PROJERCS/RPC_RTOS/COD_WS/0_KERNAL_RR/chip_headers/CMSIS/Include/core_cm4.h:
-C:/Users/ronyp/Desktop/PROJERCS/RPC_RTOS/COD_WS/0_KERNAL_RR/chip_headers/CMSIS/Include/cmsis_version.h:
-C:/Users/ronyp/Desktop/PROJERCS/RPC_RTOS/COD_WS/0_KERNAL_RR/chip_headers/CMSIS/Include/cmsis_compiler.h:
-C:/Users/ronyp/Desktop/PROJERCS/RPC_RTOS/COD_WS/0_KERNAL_RR/chip_headers/CMSIS/Include/cmsis_gcc.h:
-C:/Users/ronyp/Desktop/PROJERCS/RPC_RTOS/COD_WS/0_KERNAL_RR/chip_headers/CMSIS/Include/mpu_armv7.h:
-C:/Users/ronyp/Desktop/PROJERCS/RPC_RTOS/COD_WS/0_KERNAL_RR/chip_headers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h:
+C:/Users/ronyp/Desktop/GIT_PROJECTS/KAINOS_PROJECTS/FAIL_RTOS/FAIL_RTOS/0_KERNAL_RR/chip_headers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:
+C:/Users/ronyp/Desktop/GIT_PROJECTS/KAINOS_PROJECTS/FAIL_RTOS/FAIL_RTOS/0_KERNAL_RR/chip_headers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h:
+C:/Users/ronyp/Desktop/GIT_PROJECTS/KAINOS_PROJECTS/FAIL_RTOS/FAIL_RTOS/0_KERNAL_RR/chip_headers/CMSIS/Include/core_cm4.h:
+C:/Users/ronyp/Desktop/GIT_PROJECTS/KAINOS_PROJECTS/FAIL_RTOS/FAIL_RTOS/0_KERNAL_RR/chip_headers/CMSIS/Include/cmsis_version.h:
+C:/Users/ronyp/Desktop/GIT_PROJECTS/KAINOS_PROJECTS/FAIL_RTOS/FAIL_RTOS/0_KERNAL_RR/chip_headers/CMSIS/Include/cmsis_compiler.h:
+C:/Users/ronyp/Desktop/GIT_PROJECTS/KAINOS_PROJECTS/FAIL_RTOS/FAIL_RTOS/0_KERNAL_RR/chip_headers/CMSIS/Include/cmsis_gcc.h:
+C:/Users/ronyp/Desktop/GIT_PROJECTS/KAINOS_PROJECTS/FAIL_RTOS/FAIL_RTOS/0_KERNAL_RR/chip_headers/CMSIS/Include/mpu_armv7.h:
+C:/Users/ronyp/Desktop/GIT_PROJECTS/KAINOS_PROJECTS/FAIL_RTOS/FAIL_RTOS/0_KERNAL_RR/chip_headers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h:
