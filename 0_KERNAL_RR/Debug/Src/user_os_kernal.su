@@ -1,7 +1,8 @@
 C:/Users/ronyp/Desktop/GIT_PROJECTS/KAINOS_PROJECTS/FAIL_RTOS/FAIL_RTOS/0_KERNAL_RR/chip_headers/CMSIS/Include/core_cm4.h:1814:22:__NVIC_SetPriority	16	static
-../Src/user_os_kernal.c:62:6:os_kernal_stack_init	16	static
-../Src/user_os_kernal.c:94:9:os_kernal_add_thread	24	static,ignoring_inline_asm
-../Src/user_os_kernal.c:129:6:os_kernel_init	4	static
-../Src/user_os_kernal.c:135:6:os_kernal_lanch	16	static
-../Src/user_os_kernal.c:160:28:SysTick_Handler	0	static,ignoring_inline_asm
-../Src/user_os_kernal.c:197:28:os_scheduler_launch	0	static,ignoring_inline_asm
+../Src/user_os_kernal.c:65:6:os_kernal_stack_init	16	static
+../Src/user_os_kernal.c:97:9:os_kernal_add_thread	24	static,ignoring_inline_asm
+../Src/user_os_kernal.c:134:6:os_kernel_init	4	static
+../Src/user_os_kernal.c:140:6:os_kernal_lanch	16	static
+../Src/user_os_kernal.c:166:28:SysTick_Handler	0	static,ignoring_inline_asm
+../Src/user_os_kernal.c:203:28:os_scheduler_launch	0	static,ignoring_inline_asm
+../Src/user_os_kernal.c:230:6:os_thread_yeald	4	static

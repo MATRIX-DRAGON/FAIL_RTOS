@@ -18,6 +18,9 @@
 #define CLK_CTRL_CNT		(1<<16)
 #define CLK_CTRL_REST		(0)
 
+#define INTCTRL				(*((volatile uint32_t*)0xE000ED04)) // the address of ICSR form ARM M4 TRM
+#define PENDSTEN			(1<<26)//This sets the pending interupt for systick in ICSR register
+
 
 uint32_t milli_s_prescaler ;
 void os_scheduler_launch(void);
@@ -96,27 +99,29 @@ uint8_t os_kernal_add_thread(void(*thread0)(void),void(*thread1)(void),void(*thr
 	/*disable global interupt*/
 	__disable_irq();
 
+	/*in the create TCB for each tasks link one threads
+	 * tcb to anothers next to crate a circular link list*/
 	tcbs[0].nextpt = &tcbs[1];
 	tcbs[1].nextpt = &tcbs[2];
 	tcbs[2].nextpt = &tcbs[0];
 
 	/*initialising thread_0*/
 	os_kernal_stack_init(0);
-	/*let us initialise the pc of thread_0*/
+	/*let us initialise the pc of thread_0 in its corresponding stack frame*/
 	tcb_stack[0][STACK_SIZE-2]= (uint32_t)thread0;
 
 
 	/*initialising thread_1*/
 	os_kernal_stack_init(1);
-	/*let us initialise the pc of thread_1*/
+	/*let us initialise the pc of thread_1 in its corresponding stack frame*/
 	tcb_stack[1][STACK_SIZE-2]= (uint32_t)thread1;
 
 	/*initialising thread_2*/
 	os_kernal_stack_init(2);
-	/*let us initialise the pc of thread_2*/
+	/*let us initialise the pc of thread_2 in its corresponding stack frame */
 	tcb_stack[2][STACK_SIZE-2]= (uint32_t)thread2	;
 
-	/*start with thread_0*/
+	/*currentpt is assigned with the adres of thread_0 to start with thread_0 */
 	currentpt = &tcbs[0];
 
 	/*enable global interupt*/
@@ -157,6 +162,7 @@ void os_kernal_lanch(uint32_t quanta)
 	os_scheduler_launch();
 
 }
+
 __attribute__((naked))void SysTick_Handler(void)
 {
 	/*the folowing asembly code will be writen wrt GNU ASSEMBLY PROGRAMING FOR ARM */
@@ -218,5 +224,16 @@ __attribute__((naked))void os_scheduler_launch(void)
 	__asm("CPSIE I");
 	/*return from exeption */
 	__asm("BX LR");
+
+}
+
+void os_thread_yeald(void)
+{
+	/*clear sys-tick current value register*/
+	SysTick->VAL =0;
+
+	/*triger systick interupt before it hits the counter value to basically call the handler to context switch */
+	INTCTRL = PENDSTEN;
+
 
 }

@@ -17,6 +17,7 @@ void user_thread_a(void)
 				i++;
 			}
 				printf("led ON thread a running \n\r");
+				os_thread_yeald();
 
 		}
 
@@ -33,6 +34,7 @@ void user_thread_b(void)
 				i++;
 			}
 				printf("led OFF task b running  \n\r");
+				os_thread_yeald();
 		}
 
 }
@@ -48,6 +50,7 @@ void user_thread_c(void)
 				i++;
 			}
 				printf("led ON task c running \n\r");
+				//os_os_thread_yeald();
 
 		}
 

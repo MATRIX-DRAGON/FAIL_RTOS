@@ -14,4 +14,5 @@
 void os_kernel_init(void);
 uint8_t os_kernal_add_thread(void(*thread0)(void),void(*thread1)(void),void(*thread2)(void));
 void os_kernal_lanch(uint32_t quanta);
+void os_thread_yeald(void);
 #endif /* USER_OS_KERNAL_H_ */
