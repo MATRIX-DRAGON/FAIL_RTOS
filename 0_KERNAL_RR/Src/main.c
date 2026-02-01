@@ -1,4 +1,4 @@
-
+#include "stdlib.h"
 #include "user_led.h"
 #include "user_uart.h"
 #include"user_os_kernal.h"
@@ -24,7 +24,7 @@ void user_thread_a(void)
 
 			printf("led ON thread a running \n\r");
 			os_spinlock_set(spinlock_2);
-			os_thread_yeald();
+			//os_thread_yeald();
 
 		}
 
@@ -44,7 +44,7 @@ void user_thread_b(void)
 
 			printf("led OFF task b running  \n\r");
 			os_spinlock_set(spinlock_3);
-			os_thread_yeald();
+			//os_thread_yeald();
 		}
 
 }
@@ -63,7 +63,7 @@ void user_thread_c(void)
 
 			printf("led ON task c running \n\r");
 			os_spinlock_set(spinlock_1);
-			os_thread_yeald();
+			//os_thread_yeald();
 
 		}
 
@@ -73,6 +73,10 @@ int main()
 {
 	led_init();
 	uart_tx_init();
+
+	spinlock_1 = calloc(1, sizeof(spinlock_1));
+	spinlock_2 = calloc(1, sizeof(spinlock_2));
+	spinlock_3 = calloc(1, sizeof(spinlock_3));
 	os_spinlock_init(spinlock_1,1);
 	os_spinlock_init(spinlock_2,0);
 	os_spinlock_init(spinlock_3,0);
@@ -81,7 +85,7 @@ int main()
 	/*add three threads*/
 	os_kernal_add_thread(user_thread_a,user_thread_b,user_thread_c);
 	/*set round robin time quanta*/
-	os_kernal_lanch(10);//10 ms is set now
+	os_kernal_lanch(2);//10 ms is set now
 
 	while(1)
 	{
