@@ -237,3 +237,27 @@ void os_thread_yeald(void)
 
 
 }
+
+void os_spinlock_init(uint32_t *spinlock,uint32_t value)
+{
+	*spinlock=value;
+}
+
+void os_spinlock_set(uint32_t *spinlock)
+{
+	__disable_irq();
+	*spinlock += 1;
+	__enable_irq();
+}
+
+void os_spinlock_wait(uint32_t *spinlock)
+{
+	__disable_irq();
+	while(*spinlock <= 0)
+	{
+		__disable_irq();
+		__enable_irq();
+	}
+	*spinlock -= 1;
+	__enable_irq();
+}
